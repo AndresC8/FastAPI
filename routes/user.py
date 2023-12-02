@@ -8,18 +8,18 @@ user = APIRouter()
 def get_users():
     return conn.execute(users.select()).fetchall()
 
-@user.get("/d")
-def passs():
+@user.get("/c8")
+def function1():
+    return "Todo ok"
+
+@user.get("/us")
+def function2():
     return "pass"
 
-@user.get("/usfers")
-def passs():
+@user.get("/use")
+def function3():
     return "pass"
 
-@user.get("/a")
-def passs():
-    return "pass"
-
-@user.get("/ee")
-def passs():
+@user.get("/usrs")
+def function4():
     return "pass"
